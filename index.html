@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bindusree Pothapi | Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: #2c3e50;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      color: white;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    .header-text {
+      max-width: 500px;
+    }
+
+    .btn {
+      background-color: #00aced;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #007bb5;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+      font-size: 24px;
+    }
+
+    .project-card, .edu-card {
+      background-color: #fff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      line-height: 1.8;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      font-family: 'Poppins', sans-serif;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #00aced;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #007bb5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #ecf0f1;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <h2>Bindusree</h2>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <img src="assets\profilephoto.jpg" alt="Bindusree Pothapi" class="profile-pic" />
+      <div class="header-text">
+        <h1>Bindusree Pothapi</h1>
+        <p>Full Stack Developer | AI & ML Enthusiast</p>
+        <a href="assets\Bindusree Pothapi_new.docx" download class="btn">Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a highly motivated Computer Science graduate from Kalasalingam University with a passion for learning and building impactful tech solutions. I’ve worked on full-stack web apps, machine learning pipelines, and blockchain-based systems. I’m a quick learner, team collaborator, and always eager to grow.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Receipt Bill Analyzer</h3>
+      <p>Built a full-stack OCR web app using FastAPI, React.js, and SQL. Integrated Streamlit dashboard for analytics and deployed via Netlify.</p>
+      <p><strong>Tech:</strong> FastAPI, React.js, Streamlit, SQL, Pytesseract</p>
+      <p><a href="https://github.com/bindhusreepothapi" target="_blank">View on GitHub</a></p>
+    </div>
+
+    <div class="project-card">
+      <h3>Brain Tumor Detection System</h3>
+      <p>Developed an ML pipeline using Python and OpenCV to detect brain tumors from MRI images. Achieved high accuracy with SVM and data augmentation.</p>
+      <p><strong>Tech:</strong> OpenCV, Scikit-learn, Matplotlib</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Blockchain for Secure EHRs</h3>
+      <p>Created a decentralized system for sharing health records using blockchain and mobile cloud infrastructure. Implemented smart contracts and secure data exchange.</p>
+      <p><strong>Tech:</strong> Solidity, Ethereum, IPFS, Android Studio, Firebase, AWS, SHA-256, AES, React Native</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="edu-card">
+      <h3>B.Tech in Computer Science Engineering</h3>
+      <p>Kalasalingam University | May 2025 | CGPA: 8.33</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>Intermediate</h3>
+      <p>FIITJEE Junior College | June 2021 | 93.6%</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>10th Class</h3>
+      <p>Narayana High School | CGPA: 9.8</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, Java, C</li>
+      <li><strong>Web:</strong> HTML, CSS, SQL</li>
+      <li><strong>Databases:</strong> MySQL, SQLite</li>
+      <li><strong>Tools & Platforms:</strong> Git, GitHub, Jupyter Notebook</li>
+      <li><strong>Soft Skills:</strong> Team collaboration, Problem solving, Quick learner, Attention to detail</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+   
